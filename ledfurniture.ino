@@ -17,7 +17,8 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800
 void setup() {
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
-  Serial.begin(9600);  
+  Serial.begin(9600);
+  
 }
 
 void loop() {
