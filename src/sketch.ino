@@ -1,4 +1,4 @@
-#include <Adafruit_NeoPixel.h>
+#include "Adafruit_NeoPixel.h"
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
@@ -37,9 +37,11 @@ void loop() {
 }
 
 void parseCMD(){
-  for(uint16_t i=0; i<strip.numPixels(); i++) {
-    strip.setPixelColor(i, arg1,arg2,arg3);
-    strip.show();
+  if (comm > 0){
+    for(uint16_t i=0; i<strip.numPixels(); i++) {
+      strip.setPixelColor(i, arg1,arg2,arg3);
+      strip.show();
+    }
   }
 }
 
