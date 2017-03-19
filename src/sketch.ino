@@ -37,7 +37,7 @@ void loop() {
 }
 
 void parseCMD(){
-  if (comm > 0){
+  if (comm = 1){
     for(uint16_t i=0; i<strip.numPixels(); i++) {
       strip.setPixelColor(i, arg1,arg2,arg3);
       strip.show();
