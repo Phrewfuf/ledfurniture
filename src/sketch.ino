@@ -22,6 +22,7 @@ void setup() {
 }
 
 void loop() {
+  //get those commands from the Serial interface
   if(Serial.available() > 0){
     comm = Serial.parseInt();
     arg1 = Serial.parseInt();
