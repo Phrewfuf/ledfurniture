@@ -42,6 +42,7 @@ void parseCMD(){
       strip.setPixelColor(i, arg1,arg2,arg3);
       strip.show();
     }
+    comm = 0;
   }
 }
 
